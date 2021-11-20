@@ -1,0 +1,19 @@
+mixin description()
+  .c-description
+    .c-description__wrapper
+      .c-description__title
+        +title({
+          classList:"e-title--size",
+          content: "WHO WE ARE"
+        })
+      .c-description__paragraph
+        +paragraph({
+          classList: "e-paragraph--lh",
+          content: "We create websites for all of Ukraine, this is the main direction of our activity. Website development from a minimal business card page to full-fledged corporate websites and online stores! We also offer web services to increase income from Internet representations, as well as services for the promotion of sites in search engines."
+          })
+      .c-description__button 
+        +link-button({
+          href:"./about.html",
+          content: "More about us",
+          className: "e-link__button"
+        })

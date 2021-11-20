@@ -1,0 +1,31 @@
+.e-title {
+  &--size {
+    font-size: em(36);
+    font-weight: bold;
+    font-family: $f-oswald;
+  }
+  &--footer {
+    font-family: $f-oswald;
+    color: $c-white;
+    font-size: em(18);
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &--contact {
+    color: $c-black;
+    font-size: em(32);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .e-title--size {
+    font-size: em(24);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .e-title--size {
+    font-size: em(20);
+  }
+}

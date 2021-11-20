@@ -1,0 +1,38 @@
+.c-form {
+  &-footer__flex {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+  }
+  &__input {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__item {
+      flex-basis: 255px;
+    }
+  }
+
+  &__msg {
+    margin-top: 20px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 550px) {
+  .c-form__input {
+    display: block;
+
+    &__item {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+} ;

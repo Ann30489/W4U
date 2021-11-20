@@ -1,0 +1,22 @@
+extends ./src/_extends/common
+
+block style
+	link(rel="stylesheet" href="./styles/main.css")
+	link(rel="stylesheet" href="./styles/header.css")
+	link(rel="stylesheet" href="./styles/footer.css")
+	block title
+		title WebForYou
+block content
+	+header()
+	.container
+		+scroll()
+		+contact-btn()
+		+contacts()
+		main            
+			//- Main content is here
+		+footer()
+block script
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+	script(src="https://kit.fontawesome.com/f7935cd2ed.js" crossorigin="anonymous")
+	script(src="./js/burger.js")
+	script(src="./js/modal.js") 

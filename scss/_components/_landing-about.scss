@@ -1,0 +1,73 @@
+.c-about {
+  &__wrapper {
+    padding-top: 170px;
+    padding-bottom: 130px;
+  }
+
+  &-card {
+    position: relative;
+    &__background {
+      img {
+        width: 100%;
+        max-width: 810px;
+        height: auto;
+      }
+    }
+
+    &__description {
+      position: absolute;
+      background-color: $c-white;
+      z-index: 2;
+      top: 8%;
+      left: 40%;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    &-card {
+      display: flex;
+      justify-content: center;
+      &__description {
+        left: 20%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    &-card {
+      display: flex;
+      justify-content: center;
+      &__background {
+        display: none;
+      }
+      &__description {
+        box-shadow: none;
+        position: static;
+        padding: 20px 0px;
+      }
+    }
+  }
+  @media screen and (max-width: 650px) {
+    &__wrapper {
+      padding-top: 130px;
+      padding-bottom: 100px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    &-card {
+      display: flex;
+      justify-content: center;
+      &__background {
+        display: none;
+      }
+      &__description {
+        box-shadow: none;
+        position: static;
+        padding: 20px 0px;
+      }
+    }
+  }
+}

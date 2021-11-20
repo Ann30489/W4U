@@ -1,0 +1,108 @@
+@mixin backgroundImage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@function em($px) {
+  @return $px / $fs-base + em;
+}
+
+@mixin size($px) {
+  width: $px + px;
+  height: $px + px;
+}
+
+@mixin maxCentered($widthPx) {
+  max-width: $widthPx + px;
+  margin: 0 auto;
+}
+
+@mixin fixedGlobal {
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  display: flex;
+  z-index: 999;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+@mixin fix {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+// For modal windows
+@mixin absolutelyCenter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+@mixin absolutelyCenterHT($top) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: $top;
+  margin: 0 auto;
+}
+
+@mixin absolutelyCenterHB {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+@mixin absolutelyFull {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin limitText($lines, $lineHeight) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+  line-height: $lineHeight;
+  max-height: $lineHeight * $lines + "px";
+}
+
+@mixin gradientText($gradient, $color) {
+  background: $gradient;
+  -ms-background: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $color;
+  -ms-background-size: 10px;
+}
+
+// FONTS
+@mixin font-face(
+  $fontname,
+  $fontfile,
+  $fontweight: normal,
+  $fontstyle: normal
+) {
+  @font-face {
+    font-family: $fontname;
+    src: url("../assets/fonts/" + $fontfile + ".eot");
+    src: url("../assets/fonts/" + $fontfile + ".ttf") format("truetype"),
+      url("../assets/fonts/" + $fontfile + ".woff") format("woff"),
+      url("../assets/fonts/" + $fontfile + ".woff2") format("woff2");
+    font-weight: $fontweight;
+    font-style: $fontstyle;
+  }
+}

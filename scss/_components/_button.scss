@@ -1,0 +1,25 @@
+.c-button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  height: 100%;
+
+  &--modal {
+    border-radius: 25px;
+    background-color: $c-purple;
+    padding: 10px 50px;
+  }
+
+  &--subscribe {
+    border-radius: 0 25px 25px 0;
+    background-color: $c-purple;
+  }
+
+  &__text {
+    color: $c-white;
+    font-family: $f-oswald;
+    font-size: em(18);
+    font-weight: bold;
+  }
+}

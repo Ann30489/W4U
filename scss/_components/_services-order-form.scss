@@ -1,0 +1,213 @@
+.services-order-form {
+  padding-bottom: 20px;
+}
+
+.order-heading {
+  font-family: $f-oswald;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  text-align: center;
+  user-select: none;
+
+  &__title {
+    font-family: $f-oswald;
+    color: $c-white;
+    font-size: em(64);
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-family: $f-oswald;
+    color: $c-white;
+    font-size: em(24);
+  }
+}
+
+.order-form {
+  width: 100%;
+  font-family: $f-roboto;
+  font-weight: normal;
+  font-size: em(16);
+
+  // Text-elements styles
+
+  &__subtitle {
+    font-family: $f-roboto;
+    margin-bottom: 10px;
+
+    &--required {
+      font-size: em(12);
+      color: $c-grey;
+    }
+
+    &--customer-contact {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &--customer-contact-label {
+      display: block;
+      width: 25%;
+      min-width: 240px;
+      max-width: 320px;
+      margin-bottom: 15px;
+      font-size: em(12);
+      color: $c-grey;
+    }
+  }
+
+  &__star {
+    color: $c-orange;
+  }
+
+  // block of making order
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  // list of website variations
+  &__variation-list {
+    flex: 0 1 15%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 10px;
+    list-style-type: none;
+    @media (max-width: 800px) {
+      margin-right: 20px;
+      flex: 0 1 auto;
+    }
+  }
+
+  &__variation-item {
+    background-color: transparent;
+    max-width: 150px;
+    margin-bottom: 10px;
+    box-shadow: $bs-media;
+    user-select: none;
+    overflow: hidden;
+    text-overflow: clip;
+    @media (max-width: 800px) {
+      max-width: 100%;
+      min-width: 120px;
+    }
+  }
+
+  &__variation-link {
+    display: block;
+    // height: 100%;
+    padding: 10px 15px;
+    border: 1px solid $c-grey-very-dark;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f8cdc8;
+    text-decoration: none;
+    color: black;
+    &:focus {
+      background-color: #ed9187;
+      cursor: default;
+    }
+  }
+
+  // order form (choising options of website)
+  &__variation {
+    flex: 1 1 85%;
+    margin-left: 10px;
+    margin-right: 10px;
+    @media (max-width: 800px) {
+      margin-left: 20px;
+    }
+  }
+
+  &__choises-field {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__choise-list {
+    margin-bottom: 10px;
+  }
+
+  &__choise-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: $c-black;
+    font-size: em(14);
+    font-weight: bold;
+    text-align: center;
+
+    &__input {
+      display: none;
+    }
+
+    &__label {
+      display: inline-block;
+      cursor: pointer;
+      min-width: 140px;
+      width: auto;
+      padding: 5px 10px;
+      // overflow-y: hidden;
+      // text-overflow: ellipsis;
+      background-color: #f8cdc8;
+      border: 1px solid $c-grey-very-dark;
+      border-radius: 0;
+      box-shadow: $bs-media;
+      user-select: none;
+
+      &:hover {
+        background-color: #ed9187;
+        transition: $t-normal;
+      }
+
+      &:active {
+        background-color: #ed9187;
+        transition: $t-normal;
+        box-shadow: $bs-media inset;
+      }
+    }
+
+    &__input:checked + label {
+      background-color: #ed9187;
+      transition: $t-normal;
+      box-shadow: $bs-media inset;
+    }
+  }
+
+  &__customer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0 20px 10px;
+  }
+  &__contact-input {
+    display: block;
+    width: 100%;
+    padding: 6px 15px;
+    outline: none;
+    border: 2px solid $c-white-grey;
+    font-size: 14px;
+    overflow: auto;
+    white-space: nowrap;
+    border-radius: 15px;
+    @media (max-width: 800px) {
+      font-size: 13px;
+    }
+
+    &:focus {
+      border: 2px solid $c-purple;
+    }
+  }
+
+  &__button-submit {
+    min-width: 150px;
+  }
+}

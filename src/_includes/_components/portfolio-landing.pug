@@ -1,0 +1,11 @@
+mixin portfolio-landing()
+  section.c-portfolio-landing 
+    .c-portfolio-landing__wrapper.block-size
+      .c-portfolio-landing__title 
+        +title({
+          classList:"e-title--size",
+          content: "WE OFFER"
+        })
+      .c-portfolio-landing__cards
+        +card-portfolio()
+

@@ -1,0 +1,10 @@
+mixin title(args)
+  - let content = args.content;
+  - let classList = args.classList;
+
+    if(classList == "e-title--footer")
+      h4.e-title(class= classList)= content
+    else if(classList == "e-title--contact")
+      h3.e-title(class= classList)= content
+    else if(classList == "e-title--size")
+      h2.e-title(class= classList)= content

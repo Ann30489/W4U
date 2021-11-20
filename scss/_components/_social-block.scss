@@ -1,0 +1,9 @@
+.c-social-block {
+  flex-basis: 100px;
+
+  & .e-link--footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}

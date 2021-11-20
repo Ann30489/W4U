@@ -1,0 +1,83 @@
+// config
+@import "./variables";
+// mixins
+@import "./mixins";
+// fonts
+@import "./fonts";
+
+// Elements
+@import "./_elements/image-aboutus";
+@import "./_elements/text-aboutus";
+@import "./_elements/video-aboutus";
+
+.c-about-us {
+  &__wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin: 70px auto 10px;
+
+    // блоки декорації зверху та знизу сторінки
+    &::before,
+    &::after {
+      background-color: $c-white-grey;
+      position: absolute;
+      display: block;
+      height: 200px;
+      content: "";
+      width: 100%;
+      z-index: -1;
+      right: 0;
+      left: 0;
+
+      @media (max-width: 767px) {
+        height: 150px;
+      }
+    }
+
+    &::before {
+      top: 40px;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  &__inner {
+    flex-direction: column;
+    max-width: 830px;
+    padding: 0 15px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+  }
+
+  &__title {
+    font-family: $f-oswald;
+    font-size: em($fs-title-about-desktop);
+    line-height: $lh-title-about;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+
+    &--video {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 767px) {
+      font-size: em($fs-title-about-mobile);
+      margin-bottom: 30px;
+    }
+  }
+  &__numbers {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.box-shadow {
+  box-shadow: $bs-media;
+}

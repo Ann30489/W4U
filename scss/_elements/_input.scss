@@ -1,0 +1,30 @@
+.e-input {
+  border: none;
+  outline: none;
+  background-color: $c-white;
+  padding-left: 20px;
+  height: 100%;
+  text-align: left;
+
+  &::placeholder {
+    font-size: em(14);
+    color: $c-grey;
+    font-family: $f-roboto, sans-serif;
+  }
+
+  &--subscribe {
+    border-radius: 25px 0 0 25px;
+  }
+
+  &--border {
+    border: 1px solid $c-lightest-black-bg;
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  &--resize {
+    resize: none;
+    min-height: 180px;
+  }
+}

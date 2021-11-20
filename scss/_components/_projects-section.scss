@@ -1,0 +1,124 @@
+/* Projects section */
+.c-projects {
+	&__title {
+		font-family: $f-oswald;
+		font-weight: bold;
+		font-size: 36px;
+		text-align: center;
+		user-select: none;
+		line-height: 53px;
+		margin-bottom: 60px;
+		color: $c-black;
+	}
+	&__block {
+		&__wrapper {
+			max-width: 1200px;
+			margin: 0 auto;
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-bottom: 60px;
+			@media (max-width: 1200px) {
+				padding: 0 20px;
+			}
+			@media (max-width: 1024px) {
+				flex-direction: column;
+			}
+		}
+		&__item {
+			position: relative;
+			width: 30%;
+			@media (max-width: 1024px) {
+				width: 100%;
+			}
+			& > img {
+				position: relative;
+				object-fit: cover;
+				z-index: 0;
+				width: 100%;
+				height: 275px;
+				box-shadow: $bs-large;
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+.e-projects__block__title {
+	position: absolute;
+	z-index: 10;
+	top: 33%;
+	font-family: $f-roboto;
+	font-weight: bold;
+	font-size: 32px;
+	text-decoration: none;
+	text-align: center;
+	user-select: none;
+	line-height: 28px;
+	color: $c-white;
+	margin-bottom: 20px;
+	&:hover {
+		color: $c-turquoise;
+		transition: $t-normal;
+	}
+}
+
+.e-block__title--position1 {
+	left: 18%;
+	@media (max-width: 1024px) {
+		left: 10%;
+	}
+}
+
+.e-block__title--position2 {
+	left: 28%;
+	@media (max-width: 1024px) {
+		left: 10%;
+	}
+}
+
+.e-block__title--position3 {
+	left: 25%;
+	@media (max-width: 1024px) {
+		left: 10%;
+	}
+}
+
+.e-projects__block__description {
+  font-family: $f-roboto;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $c-dark-grey;
+  @media (max-width: 1024px) {
+    margin-bottom: 20px;
+  }
+}
+
+.c-projects__button {
+	cursor: pointer;
+	max-width: 230px;
+	margin: 0 auto;
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	outline: none;
+	border: none;
+	padding: 5px 5px;
+	margin-bottom: 65px;
+	height: 100%;
+	border-radius: 25px 25px 25px 25px;
+	background-color: $c-purple;
+	&:hover {
+		background-color: $c-dark-purple;
+		transition: $t-normal;
+	}
+	&__text {
+		color: $c-white;
+		font-family: $f-oswald;
+		font-size: 18px;
+		text-decoration: none;
+	}
+}

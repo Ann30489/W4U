@@ -1,0 +1,12 @@
+mixin input(args)
+	- let id = args.id 
+	- let type = args.type 
+	- let name = args.name 
+	- let content = args.content
+	- let classList = args.classList
+
+		label(for= id)
+			if(classList == "e-input--border e-input--resize")
+				textarea.e-input(class= classList, type= type, name= name id= id placeholder= content required)
+			else 
+				input.e-input(class= classList, type= type, id= id, name= name, placeholder= content required)

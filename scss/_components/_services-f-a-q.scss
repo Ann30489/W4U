@@ -1,0 +1,41 @@
+.f-a-q {
+  background-color: $c-white;
+  color: black;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5) inset;
+  max-width: 1920px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+
+  &__heading {
+    padding: 30px 10px 0;
+    user-select: none;
+    margin-bottom: 30px;
+
+    &__title {
+      font-family: $f-oswald;
+      font-weight: bold;
+      text-align: center;
+      font-size: em(36);
+    }
+  }
+
+  &__wrapper {
+    font-family: $f-roboto;
+  }
+
+  &__question-item {
+    margin: 0 10px 10px;
+  }
+
+  &__question-title {
+    font-size: em(18);
+    margin-bottom: 10px;
+  }
+
+  &__question-p {
+    font-weight: normal;
+    text-align: justify;
+    text-indent: 1.25cm;
+  }
+}

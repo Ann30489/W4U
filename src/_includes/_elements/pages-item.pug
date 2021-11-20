@@ -1,0 +1,19 @@
+mixin pages-item(args)
+  - let href = args.href || "/"
+  - let className = args.className || "e-pages__text";
+  -let content = args.content;
+
+  li.e-pages__item
+    a.e-pages__link(href= href)
+      if(className == "e-pages__text")
+        span(class= className)= content
+      else if(className == "e-pages__text--normal")
+        span.e-pages__text(class= className)= content
+
+
+
+
+
+
+
+

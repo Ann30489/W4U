@@ -1,0 +1,7 @@
+mixin portfolio-img(args)
+  - let src = args.src;
+  - let alt = args.alt;
+  - let className = args.className;
+
+  if(className == "e-portfolio-card__img")
+    img(class= className src= src alt= alt)

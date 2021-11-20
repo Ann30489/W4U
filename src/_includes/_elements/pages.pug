@@ -1,0 +1,26 @@
+mixin pages()
+  .e-pages
+    ul.e-pages__list
+      +pages-item({
+        className: "e-pages__text--normal",
+        content: "<"
+      }) 
+      +pages-item({
+        content: "1"
+      })
+      +pages-item({
+        content: "2"
+      }) 
+      +pages-item({
+        content: "3"
+      }) 
+      +pages-item({
+        content: "4"
+      })  
+      +pages-item({
+        content: "5"
+      }) 
+      +pages-item({
+        className: "e-pages__text--normal",
+        content: ">"
+      }) 

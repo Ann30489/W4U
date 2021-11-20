@@ -1,0 +1,7 @@
+mixin button(args)
+	- let type = args.type;
+	- let content = args.content;
+	- let classList = args.classList;
+	- let spanClassList = args.spanClassList;
+		button.c-button(class= classList, type= type)
+			span(class= spanClassList)= content

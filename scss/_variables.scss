@@ -1,0 +1,41 @@
+//Colors
+$c-white: #ffffff;
+$c-turquoise: #4ddef7;
+$c-black: #000000;
+$c-light-black: #171717;
+$c-light-black-bg: rgba(23, 23, 23, 0.8);
+$c-lightest-black-bg: rgba(23, 23, 23, 0.5);
+$c-linear-light: rgba(29, 29, 29, 0.6);
+$c-white-dark: #cad4c7;
+$c-dark-grey: #646464;
+$c-light-grey: rgba(153, 153, 153, 0.3);
+$c-grey: #999999;
+$c-purple: #965fe3;
+$c-dark-purple: #6212d1;
+$c-grey-very-dark: #585858;
+$c-blue-dark: #0f4898;
+$c-white-grey: #cad4c7b2;
+$c-orange: #FE6600;
+
+// Font
+$f-roboto: "Roboto";
+$f-oswald: "Oswald";
+
+// Font size
+$fs-base: 16;
+$fs-title-about-desktop: 64;
+$fs-title-about-mobile: 32;
+$fs-text-about: 18;
+
+// Line height
+$lh-title-about: 1;
+$lh-text-about: 1.5;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-normal: 3px 4px 7px rgba($c-black, 0.1);
+$bs-media: 4px 4px 4px rgba(0, 0, 0, 0.5);
+$bs-large: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;

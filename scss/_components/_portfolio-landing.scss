@@ -1,0 +1,41 @@
+.c-portfolio-landing {
+  &__wrapper {
+    padding-bottom: 120px;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 1300px) {
+    &__wrapper {
+      padding: 0 40px 120px 40px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    // &__wrapper {
+    //   padding: 0 20px 120px 20px;
+    // }
+    &__cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    &__cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+mixin subscribe(args)
+	.c-subscribe 
+		.c-subscribe__title
+			+title({classList: "e-title--footer", content: "Subscribe to us"})
+		.c-subscribe__text 
+			+text({content: "Useful articles, promotions, news - get it all right now!"}) 
+		+form-footer()
+		.c-subscribe__text 
+			+text({content: "We do not send spam and do not share your data with anyone."}) 
+

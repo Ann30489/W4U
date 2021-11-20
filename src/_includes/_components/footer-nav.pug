@@ -1,0 +1,7 @@
+mixin footer-nav(args) 
+	- let nav = [{classList: "e-link--footer", href: "./index.html", content: "Home"}, {classList: "e-link--footer", href: "./services.html", content: "Services"}, {classList: "e-link--footer", href: "./about.html", content: "About Us"}, {classList: "e-link--footer", href: "./portfolio.html", content: "Our Projects"}];
+		nav.c-footer-nav 
+			ul.c-footer-nav__list
+				each link in nav
+					li.c-footer-nav__list__item
+						+link({classList: link.classList, href: link.href, content: link.content})

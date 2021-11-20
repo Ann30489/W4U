@@ -1,0 +1,8 @@
+mixin paragraph(args)
+  - let content = args.content;
+  - let classList = args.classList;
+
+    if(classList == "e-paragraph--lh")
+      p.e-paragraph(class= classList)= content
+    else if(classList == "e-paragraph--normal")
+      p.e-paragraph(class = classList)= content

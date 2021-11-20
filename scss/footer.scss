@@ -1,0 +1,114 @@
+// Config
+@import "./variables";
+// Mixins
+@import "./mixins";
+// Fonts
+@import "./fonts";
+// Main styles
+@import "./_elements/icons";
+@import "./_elements/title";
+@import "./_elements/link";
+@import "./_elements/input";
+@import "./_elements/underline";
+@import "./_elements/text";
+@import "./_components/contact-block";
+@import "./_components/footer-nav";
+@import "./_components/social-block";
+@import "./_components/subscribe";
+@import "./_components/form";
+@import "./_components/button";
+.c-footer {
+  background: linear-gradient(to top, $c-light-black, $c-linear-light);
+  font-family: $f-roboto;
+  text-align: center;
+
+  &__wrapper {
+    padding: 40px 15px;
+    color: $c-grey;
+    cursor: default;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__nav {
+      flex-basis: 140px;
+    }
+
+    & .c-footer-nav__list {
+      display: block;
+    }
+  }
+
+  &__copy {
+    margin-top: 30px;
+    font-size: em(12);
+    &__write {
+      &::after {
+        content: " ";
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  // For flex-container align=center
+  .c-footer__content {
+    justify-content: center;
+  }
+  // Add margine to subscribe-block
+  .c-subscribe {
+    margin: 10px 0;
+  }
+}
+// Align content - stretch
+@media (max-width: 470px) {
+  .c-footer__content__nav,
+  .c-contact-block,
+  .c-social-block {
+    flex-basis: 100%;
+    margin-bottom: 10px;
+  }
+  // Text-align link`s -center
+  .e-link--footer {
+    text-align: center;
+  }
+  .c-social-block .e-link--footer {
+    justify-content: center;
+    padding-right: 20px;
+  }
+  .c-footer-nav__list__item .e-link--footer {
+    padding: 0;
+  }
+  // Title to center
+  .c-contact-block .e-title--footer {
+    text-align: center;
+    padding: 0;
+  }
+}
+// Change subscribe-block
+@media (max-width: 350px) {
+  .c-form {
+    &__flex {
+      display: block;
+      height: fit-content;
+    }
+    .c-button {
+      border-radius: 25px;
+      width: 120px;
+      padding: 5px;
+
+      &__text {
+        font-size: em(12);
+      }
+    }
+    .e-input--subscribe {
+      border-radius: 25px;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      max-width: 150px;
+    }
+  }
+}

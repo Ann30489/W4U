@@ -1,0 +1,51 @@
+.c-contact {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background-color: $c-lightest-black-bg;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  opacity: 0;
+  transition: all 0.8s ease-out 0s;
+
+  &.c-contact--open {
+    transition: all 0.8s ease-out 0s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 501;
+
+    & .c-contact__wrapper {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+  }
+  &__wrapper {
+    @include maxCentered(560);
+    text-align: center;
+    font-family: $f-oswald, sans-serif;
+    padding: 35px 10px 5px 10px;
+    background-color: $c-white;
+    position: relative;
+    margin-top: 90px;
+    opacity: 0;
+    transform: translate(0px, -100%);
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  &__text {
+    font-family: $f-roboto;
+    color: $c-dark-grey;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}

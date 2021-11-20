@@ -1,0 +1,16 @@
+include ../_includes/_elements/index
+include ../_includes/_components/index
+
+doctype html
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        link(rel="shortcut icon" href="./assets/icons/favicon.ico")
+        block style
+    body
+        include ../../assets/icons/common/symbol-defs.svg
+        include ../../assets/icons/common/symbol-defs-second.svg
+        .l-common
+            block content
+        block script

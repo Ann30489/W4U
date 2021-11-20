@@ -1,0 +1,23 @@
+.c-description {
+  &__wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 70px;
+    max-width: 720px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    margin-top: 10px;
+    max-width: 220px;
+  }
+
+  @media screen and (max-width: 950px) {
+    &__wrapper {
+      padding: 0 10px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+.e-paragraph {
+  margin-top: 20px;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: em(24);
+  font-family: $f-roboto;
+
+  &--lh {
+    line-height: 150%;
+  }
+
+  &--width {
+    max-width: 170px;
+  }
+  &--normal {
+    font-weight: normal;
+    font-size: em(18);
+    line-height: 21px;
+    margin-bottom: 14px;
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .e-paragraph--lh {
+    font-size: em(18);
+  }
+}
+@media screen and (max-width: 400px) {
+  .e-paragraph--lh {
+    font-size: em(14);
+    line-height: 120%;
+  }
+}

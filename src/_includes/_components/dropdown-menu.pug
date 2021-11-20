@@ -1,0 +1,8 @@
+mixin dropdown-menu(args)
+	- let dropLink = [{classList: "e-link--navigation js-lang-about", href: "./about.html", content: "ABOUT US"}, {classList: "e-link--navigation js-lang-proj", href: "./portfolio.html", content: "OUR PROJECTS"}, {classList: "e-link--navigation js-lang-news", href: "./news.html", content: "NEWS"}];
+		li.c-dropdown
+			span.js-lang-company COMPANY
+			ul.c-dropdown__list
+				each link in dropLink 
+					li.c-dropdown__list__item
+						+link({classList: link.classList, href: link.href, content: link.content})

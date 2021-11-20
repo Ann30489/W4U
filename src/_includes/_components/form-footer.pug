@@ -1,0 +1,5 @@
+mixin form-footer(args)
+	form.c-form-footer.c-form--subscribe(action="#" method= "GET")  
+		.c-form-footer__flex.c-form--subscribe 
+			+input({classList: "e-input--subscribe", type: "email", name: "email", id: "your-email", placeholder: "Your email"})
+			+button({classList: "c-button--subscribe", spanClassList: "c-button__text", type: "submit", content: "Subscribe"})

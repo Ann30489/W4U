@@ -1,0 +1,9 @@
+.c-footer-nav {
+  &__list {
+    &__item {
+      & .e-link--footer {
+        padding: 0 0 0 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+mixin footer(args)
+  footer.c-footer
+    .c-footer__wrapper.block-size
+      .c-footer__content
+        +contact-block()
+        .c-footer__content__nav
+          +title({classList: "e-title--footer", content: "Main Links"})
+          +footer-nav()
+        +social-block()
+        +subscribe()
+      +underline({classList: "e-underline--grey"})
+      .c-footer__copy 
+        span.c-footer__copy__write &copy;
+        span 2021. All rights reserved.
+
+

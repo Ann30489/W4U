@@ -1,0 +1,14 @@
+.c-subscribe {
+  flex-basis: 400px;
+
+  &__text {
+    margin-bottom: 10px;
+    font-size: em(14);
+
+    &:last-child {
+      margin-bottom: 0;
+      margin-top: 10px;
+      font-size: em(12);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+mixin main-form(args)
+	form(action="#" method= "GET").c-form
+		.c-form__input 
+			.c-form__input__item 
+				+input({id: "name", type: "text", name: "user_name", content: "Enter your name", classList: "e-input--border"})
+			.c-form__input__item
+				+input({id: "email", type: "email", name: "user_email", content: "Enter your email", classList: "e-input--border"})
+		.c-form__msg 
+			+input({id: "message", type: "text", name: "message", content: "Enter your message", classList: "e-input--border e-input--resize"})
+		.c-form__btn 
+			+button({classList: "c-button--modal", spanClassList: "c-button__text", type: "submit", content: "SEND"})

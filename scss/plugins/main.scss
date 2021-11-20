@@ -1,0 +1,56 @@
+@import "./boostrap/bootstrap";
+@import "./normalize";
+@import "../variables";
+@import "../mixins";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.block-size {
+  @include maxCentered(1200);
+}
+
+// main-bunner Parallax Scrolling
+.container {
+  // perspective: 5px;
+  // transform-style: preserve-3d;
+  @include maxCentered(1920);
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+// .h-title
+// .content {
+//   width: 100%;
+//   height: 1200px;
+//   z-index: 2;
+//   position: absolute;
+//   top: 100vh;
+//   background: red;
+//   line-height: 30px;
+//   font-weight: lighter;
+//   padding: 40px;
+//   color: grey;
+// }

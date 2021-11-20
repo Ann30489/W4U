@@ -1,0 +1,13 @@
+mixin link-button(args)
+  -let href = args.href;
+  -let content = args.content;
+  -let className = args.className;
+
+  if(className == "e-link__button")
+    a(class= className, href=href)= content
+  else if(className == "e-link__button--quadratic")
+    a.e-link__button(class= className, href=href)= content
+
+
+
+

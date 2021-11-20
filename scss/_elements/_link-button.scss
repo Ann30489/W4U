@@ -1,0 +1,44 @@
+.e-link__button {
+  box-shadow: 4px 4px 6px -1px rgba(110, 116, 134, 0.24),
+    -4px 4px 6px -1px rgba(110, 116, 134, 0.24);
+  padding: 10px 15px;
+  background-color: $c-purple;
+  font-size: em(18);
+  font-family: $f-oswald;
+  font-weight: bold;
+  color: #fff;
+  font-style: normal;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  line-height: 27px;
+  min-height: 40px;
+  display: block;
+
+  &:hover {
+    color: $c-white;
+  }
+  &:focus {
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (max-width: 400px) {
+    font-size: em(13);
+  }
+}
+
+.e-link__button--quadratic {
+  border-radius: 0;
+  // max-width: 140px;
+
+  &:hover {
+    color: $c-white;
+  }
+  &:focus {
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  @media screen and (max-width: 400px) {
+    font-size: em(10);
+  }
+}

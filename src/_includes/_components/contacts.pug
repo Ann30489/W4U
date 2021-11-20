@@ -1,0 +1,11 @@
+mixin contacts(args)
+	.c-contact(id="contact-form") 
+		.c-contact__wrapper
+			+link({classList: "c-contact__close", href: "#", svg: "icon-close", svgClassList: "icon icon-close"}) 
+			.c-contact__title
+				+title({classList: "e-title--contact", content: "Your opinion is important for us"}) 
+			.c-contact__text 
+				+paragraph({content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia maiores aut omnis accusamus similique soluta dignissimos consequatur architecto commodi, magnam quibusdam libero maxime quia cum reiciendis eum cumque est? Debitis!"}) 
+			.c-contact__form 
+				+main-form()
+

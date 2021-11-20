@@ -1,0 +1,34 @@
+.e-link {
+  text-decoration: none;
+  display: block;
+  font-size: em(18);
+
+  &--navigation {
+    text-align: center;
+    color: $c-white;
+    font-weight: bold;
+    height: 100%;
+    &:hover {
+      background-color: $c-lightest-black-bg;
+      color: $c-turquoise;
+    }
+  }
+  &--footer {
+    color: $c-grey;
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: em(14);
+    &:hover {
+      color: $c-turquoise;
+    }
+  }
+}
+
+.c-nav__list__item .e-link,
+.c-dropdown .e-link {
+  padding: 20px 10px;
+}
+
+.c-dropdown .e-link {
+  text-align: left;
+}

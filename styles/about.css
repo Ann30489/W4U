@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Bold.eot");
+  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype"), url("../assets/fonts/Roboto/Roboto-Bold.woff") format("woff"), url("../assets/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto/Roboto-Regular.eot");
+  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype"), url("../assets/fonts/Roboto/Roboto-Regular.woff") format("woff"), url("../assets/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("../assets/fonts/Oswald/Oswald-Bold.eot");
+  src: url("../assets/fonts/Oswald/Oswald-Bold.ttf") format("truetype"), url("../assets/fonts/Oswald/Oswald-Bold.woff") format("woff"), url("../assets/fonts/Oswald/Oswald-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.e-about-us-image {
+  margin-bottom: 40px;
+  position: relative;
+  padding-top: 65%;
+}
+
+.e-about-us-image img {
+  max-width: 100%;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
+}
+
+.e-about-us-text {
+  padding-bottom: 40px;
+  font-size: 1.125em;
+  color: #707070;
+  line-height: 1.5;
+}
+
+.e-about-us-text p {
+  text-align: justify;
+}
+
+.e-about-us-video {
+  margin-bottom: 110px;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .e-about-us-video {
+    margin-bottom: 40px;
+  }
+}
+
+.e-about-us-video iframe {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.c-about-us__wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin: 70px auto 10px;
+}
+
+.c-about-us__wrapper::before, .c-about-us__wrapper::after {
+  background-color: #cad4c7b2;
+  position: absolute;
+  display: block;
+  height: 200px;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  right: 0;
+  left: 0;
+}
+
+@media (max-width: 767px) {
+  .c-about-us__wrapper::before, .c-about-us__wrapper::after {
+    height: 150px;
+  }
+}
+
+.c-about-us__wrapper::before {
+  top: 40px;
+}
+
+.c-about-us__wrapper::after {
+  bottom: 0;
+}
+
+.c-about-us__inner {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 830px;
+  padding: 0 15px;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-about-us__title {
+  font-family: "Oswald";
+  font-size: 4em;
+  line-height: 1;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.c-about-us__title--video {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  .c-about-us__title {
+    font-size: 2em;
+    margin-bottom: 30px;
+  }
+}
+
+.c-about-us__numbers {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}

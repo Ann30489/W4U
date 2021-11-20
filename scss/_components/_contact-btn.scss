@@ -1,0 +1,25 @@
+.c-contact-btn {
+  position: fixed;
+  right: 50px;
+  top: 80vh;
+  z-index: 999;
+
+  &__button {
+    border: none;
+    outline: none;
+    @include size(50);
+    background-color: $c-turquoise;
+    opacity: 0.5;
+    border-radius: 50%;
+    font-size: em(24);
+    color: white;
+    display: block;
+    text-align: center;
+    padding-top: 12px;
+
+    &:hover {
+      opacity: 1;
+      color: $c-black;
+    }
+  }
+}

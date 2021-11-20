@@ -1,0 +1,70 @@
+// Config
+@import "./variables";
+// Mixins
+@import "./mixins";
+// Fonts
+@import "./fonts";
+// Logo
+@import "./_elements/logo";
+// Link
+@import "./_elements/link";
+// Dropdown menu in main navigation
+@import "./_components/dropdown-menu";
+// Main navigation
+@import "./_components/navigation";
+// Language choice
+@import "./_components/language";
+// Burger
+@import "./_components/burger";
+@import "./_components/scroll";
+@import "./_components/contact-btn";
+// Contacts
+@import "./_components/contact";
+.c-header {
+  background-color: $c-light-black;
+  @include fix;
+  font-family: $f-oswald;
+  z-index: 500;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+  }
+
+  &__logo {
+    max-width: 80px;
+    padding: 10px 0;
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 550px;
+  }
+}
+
+// For burger - new menu
+@media (max-width: 800px) {
+  .c-header__navigation {
+    display: block;
+    position: fixed;
+    top: 70px;
+    width: 180px;
+    right: -100%;
+    background-color: $c-light-black-bg;
+    transition: all 0.4s ease;
+
+    &.c-open-burger {
+      right: 0;
+    }
+  }
+}
+// Change width by navigation
+@media (max-width: 400px) {
+  .c-header__navigation.c-open-burger {
+    right: 0;
+    left: 0;
+    width: 100%;
+  }
+}

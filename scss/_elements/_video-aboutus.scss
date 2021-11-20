@@ -1,0 +1,16 @@
+.e-about-us-video {
+  margin-bottom: 110px;
+  padding-top: 56.25%;
+  position: relative;
+  @media (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  iframe {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}

@@ -1,0 +1,123 @@
+@media (max-width: 800px) {
+  .c-burger {
+    position: fixed;
+    top: 14px;
+    right: 22px;
+    cursor: pointer;
+    &__wrapper {
+      // Position
+      position: relative;
+      @include size(40);
+    }
+    // Create lines
+    & span,
+    & span::after,
+    & span::before {
+      height: 3px;
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: $c-white;
+    }
+
+    & span::after,
+    & span::before {
+      content: " ";
+    }
+    // Center
+    & span {
+      top: 18px;
+
+      &::after {
+        top: 12px;
+      }
+
+      &::before {
+        top: -12px;
+      }
+    }
+
+    &.c-open-burger span {
+      transform: rotate(45deg);
+
+      &::before {
+        opacity: 0;
+        top: 16px;
+      }
+      &::after {
+        transform: rotate(90deg);
+        top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .c-header {
+    &__wrapper {
+      display: block;
+    }
+    // Logo to center
+    &__logo {
+      margin: 0 auto;
+    }
+  }
+}
+
+// Main styles for burger navigation
+@media (max-width: 800px) {
+  .c-nav {
+    display: block;
+    &__list {
+      display: block;
+    }
+  }
+  // Change dropdown list place
+  .c-dropdown__list {
+    top: 0;
+    right: 100%;
+    width: 180px;
+    padding-top: 0;
+
+    &__item {
+      background-color: $c-light-black-bg;
+    }
+  }
+
+  // Link in dropdown
+  .e-link--navigation {
+    text-align: left;
+  }
+
+  // Padding dropdomn sub-menu
+  .c-dropdown__list .e-link {
+    padding: 20px 10px;
+  }
+
+  .c-lang {
+    padding: 20px 10px 5px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  // Logo to left border
+  .c-header {
+    &__logo {
+      margin: 0;
+    }
+  }
+
+  // List under link
+  .c-dropdown__list {
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 0;
+
+    // Change bgcolor by dropdown list
+    &__item {
+      background-color: $c-light-black;
+    }
+  }
+}

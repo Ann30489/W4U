@@ -1,0 +1,100 @@
+mixin services-order-form(args)
+    .services-order-form
+        .order-heading 
+            h2.order-heading__title MAKE YOUR ORDER
+            p.order-heading__subtitle Here you can form your application
+        .order-form.block-size
+            form(action="#" method="get").order-form__form
+                .order-form__wrapper
+                    ul.order-form__variation-list
+                        li.order-form__variation-item
+                            a(href="#" title="Generally, this type of site consists of one page, which describes the whole essence of the company's activities and its product or service.").order-form__variation-link <span>Landing</span>
+                        li.order-form__variation-item
+                            a(href="#catalog" title="A detailed large site describing the activities of the company, consisting of dozens and sometimes hundreds of pages.").order-form__variation-link <span>Catalog</span>
+                        li.order-form__variation-item
+                            a(href="#" title="A small site, usually consisting of five - seven web pages and containing basic information about an organization, a private person, a company, goods or services, price lists, contact information.").order-form__variation-link <span>Business card</span>
+                        li.order-form__variation-item
+                            a(href="#" title="A site that sells goods via the Internet. Allows users to form a purchase order online, in their browser or through a mobile application.").order-form__variation-link <span>Online store</span>
+                        //- Inputs form 
+                    div(id="catalog").order-form__variation
+
+                        .order-form__subtitle.order-form__subtitle--required Fields marked with the symbol <span class="order-form__star">*</span> are required
+                        //- List of order's variations choises
+                        .order-form__choises-field
+                            .order-form__choise
+                                .order-form__subtitle Design <span class="order-form__star">*</span>
+                                .order-form__choise-list
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="design" id="design-1" value="already-have" required)
+                                        label.order-form__choise-item__label(for="design-1") Already have - <span class="order-form__price">0</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="design" id="design-2" value="template" required)
+                                        label.order-form__choise-item__label(for="design-2") Template - <span class="order-form__price">50</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="design" id="design-3" value="personal" required)
+                                        label.order-form__choise-item__label(for="design-3") Personal - <span class="order-form__price">100</span> $
+                            .order-form__choise
+                                .order-form__subtitle The amount of pages <span class="order-form__star">*</span>
+                                .order-form__choise-list
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="amount" id="amount-1" value="up-to-10-pages" required)
+                                        label.order-form__choise-item__label(for="amount-1") Up to 10 pages - <span class="order-form__price">200</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="amount" id="amount-2" value="10-20pages" required)
+                                        label.order-form__choise-item__label(for="amount-2") 10-20 pages - <span class="order-form__price">300</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="amount" id="amount-3" value="more-than-20-pages" required)
+                                        label.order-form__choise-item__label(for="amount-3") More than 20 pages - <span class="order-form__price">400</span> $
+                            .order-form__choise
+                                .order-form__subtitle CMS <span class="order-form__star">*</span>
+                                .order-form__choise-list
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="cms" id="cms-1" value="none" required)
+                                        label.order-form__choise-item__label(for="cms-1") None - <span class="order-form__price">0</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="cms" id="cms-2" value="wordpress" required)
+                                        label.order-form__choise-item__label(for="cms-2") Wordpress - <span class="order-form__price">100</span> $
+                            .order-form__choise
+                                .order-form__subtitle Support (can be extended) <span class="order-form__star">*</span>
+                                .order-form__choise-list
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="support" id="support-1" value="none" required)
+                                        label.order-form__choise-item__label(for="support-1") None - <span class="order-form__price">0</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="radio" name="support" id="support-2" value="1year" required)
+                                        label.order-form__choise-item__label(for="support-2") 1 year - <span class="order-form__price">500</span> $
+                            .order-form__choise
+                                .order-form__subtitle Additional options
+                                .order-form__choise-list
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-1" value="option1")
+                                        label.order-form__choise-item__label(for="additional-options-1") Option1 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-2" value="option2")
+                                        label.order-form__choise-item__label(for="additional-options-2") Option2 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-3" value="option3")
+                                        label.order-form__choise-item__label(for="additional-options-3") Option3 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-4" value="option4")
+                                        label.order-form__choise-item__label(for="additional-options-4") Option4 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-5" value="option5")
+                                        label.order-form__choise-item__label(for="additional-options-5") Option5 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-6" value="option6")
+                                        label.order-form__choise-item__label(for="additional-options-6") Option6 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-7" value="option7")
+                                        label.order-form__choise-item__label(for="additional-options-7") Option7 - <span class="order-form__price">30</span> $
+                                    .order-form__choise-item
+                                        input.order-form__choise-item__input(type="checkbox" name="additional-options" id="additional-options-8" value="option8")
+                                        label.order-form__choise-item__label(for="additional-options-8") Option8 - <span class="order-form__price">30</span> $
+                .order-form__customer-contact
+                    .order-form__subtitle.order-form__subtitle--customer-contact We will contact you after processing your order
+                    label(for="order-phone").order-form__subtitle.order-form__subtitle--customer-contact-label Your phone: <span class="order-form__star">*</span>
+                        input(type="tel" name="order-phone" autocomplete="tel" placeholder="+38 (011) 222-22-22" required).order-form__contact-input    
+                    label(for="order-email").order-form__subtitle.order-form__subtitle--customer-contact-label Your e-mail: <span class="order-form__star">*</span> 
+                        input(type="email" name="order-email" autocomplete="email" placeholder="email@test.net" required).order-form__contact-input
+                    button(type="submit").e-link__button.order-form__button-submit <span>Done!</span>
+

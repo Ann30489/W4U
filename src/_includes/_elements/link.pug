@@ -1,0 +1,15 @@
+mixin link(args)
+	- let href = args.href || '#';
+	- let svg = args.svg || false; 
+	- let content = args.content; 
+	- let classList = args.classList || '';
+	- let svgClassList = args.svgClassList ||'';
+
+		a.e-link(class= classList, href= href)
+			if svg
+				svg(class= svgClassList)
+					use(xlink:href= "#" + svg)
+				if content
+					span= content
+			else 
+				span= content

@@ -1,0 +1,52 @@
+mixin card-portfolio()
+  .c-portfolio-card__item 
+    +portfolio-img({
+      src:"../assets/images/card1.jpg",
+      className:"e-portfolio-card__img",
+      alt:"first card",
+    })
+    .c-portfolio-card__description
+      +paragraph({
+        classList:"e-paragraph--normal",
+        content:"We create any sites without any restrictions. During our work, we have created more than 120 projects for famous brands"
+      })
+      .c-portfolio-card__button
+        +link-button({
+          href:"./portfolio.html",
+          content: "All Services",
+          className: "e-link__button--quadratic"
+      })
+  .c-portfolio-card__item
+    +portfolio-img({
+      src:"../assets/images/card1.jpg",
+      className:"e-portfolio-card__img",
+      alt:"second card",
+    })
+    .c-portfolio-card__description
+      +paragraph({
+        classList:"e-paragraph--normal",
+        content:"We set up and provide a stable flow of clients for your business. We provide a quick return on your investment in the project"
+      })
+      .c-portfolio-card__button
+        +link-button({
+          href:"./portfolio.html",
+          content: "All Services",
+          className: "e-link__button--quadratic"
+        })
+  .c-portfolio-card__item
+    +portfolio-img({
+      src:"../assets/images/card1.jpg",
+      className:"e-portfolio-card__img",
+      alt:"third card",
+    })
+    .c-portfolio-card__description
+      +paragraph({
+        classList:"e-paragraph--normal",
+        content:"We create customer awareness by developing a corporate identity. We design the logical structure of web pages."
+      })
+      .c-portfolio-card__button
+        +link-button({
+          href:"./portfolio.html",
+          content: "All Services",
+          className: "e-link__button--quadratic"
+        })

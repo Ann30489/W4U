@@ -1,0 +1,8 @@
+mixin contact-block(args)
+	- let navLinks = [{classList: "e-link--footer", href: "mailto:email@test.net", content: "email@test.net"}, {classList: "e-link--footer", href: "tel:+38 011 222 22 22", content: "+38 011 222 22 22"}, {classList: "e-link--footer", href: "https://goo.gl/maps/kjh5EUsvU9pXC4rR7", content: "вулиця Котляревського, 2а, Полтава, Полтавська область, 36000"}]
+	.c-contact-block 
+		.c-contact-block__title 
+			+title({classList: "e-title--footer", content: "Contacts"})
+		.c-contact-block__link
+			each link in navLinks
+				+link({classList: link.classList, href: link.href, content: link.content})

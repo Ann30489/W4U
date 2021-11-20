@@ -1,0 +1,57 @@
+.c-numbers {
+  &__wrapper {
+    padding: 10px 0 20px 0;
+    font-family: $f-roboto;
+  }
+
+  &__title {
+    font-size: em(36);
+    font-weight: bold;
+    display: flex;
+  }
+
+  &__description {
+    display: flex;
+    border-top: 1px solid black;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: 600px) {
+    &__title {
+      font-size: em(24);
+    }
+    .c-description__item {
+      font-size: em(18);
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    &__title {
+      display: flex;
+      justify-content: center;
+    }
+    &__description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .c-description__item {
+        margin-top: 25px;
+        line-height: 26px;
+        font-weight: 500;
+      }
+    }
+  }
+  @media screen and (max-width: 400px) {
+    &__title {
+      display: flex;
+      justify-content: center;
+      font-size: em(20);
+    }
+    .c-description__item {
+      margin-top: 25px;
+      line-height: 26px;
+      font-weight: 500;
+      font-size: em(16);
+    }
+  }
+}

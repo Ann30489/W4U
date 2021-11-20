@@ -1,0 +1,23 @@
+.e-about-us-image {
+  margin-bottom: 40px;
+  position: relative;
+  padding-top: 65%;
+
+  img {
+    //   розмір картинки
+    max-width: 100%;
+
+    // задання висоти та ширини батька
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    // розтягнув по батьку з збереженням пропорцій
+    object-fit: cover;
+
+    // позиціонування по х та у
+    object-position: 50% 0;
+  }
+}

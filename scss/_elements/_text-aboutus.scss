@@ -1,0 +1,10 @@
+.e-about-us-text {
+  padding-bottom: 40px;
+  font-size: em($fs-text-about);
+  color: #707070;
+  line-height: $lh-text-about;
+
+  p {
+    text-align: justify;
+  }
+}

@@ -1,0 +1,32 @@
+.c-lang {
+  &__wrapper {
+    display: flex;
+    align-self: center;
+    padding: 20px 0;
+  }
+
+  &__btn {
+    &__input {
+      border: none;
+      outline: none;
+      background: none;
+      font-family: $f-oswald;
+      cursor: pointer;
+      color: $c-white;
+      font-weight: bold;
+      padding: 2px;
+
+      &:hover {
+        color: $c-turquoise;
+      }
+    }
+  }
+
+  &__line {
+    color: $c-white;
+  }
+}
+
+.js-hover {
+  color: $c-turquoise;
+}

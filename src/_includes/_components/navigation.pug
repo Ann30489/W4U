@@ -1,0 +1,11 @@
+mixin navigation(args)
+	nav.c-nav 
+		ul.c-nav__list
+			li.c-nav__list__item 
+				+link({classList: "e-link--navigation js-lang-home", href: "./index.html", content: "HOME"})
+				+dropdown-menu()
+				li.c-nav__list__item 
+					+link({classList: "e-link--navigation js-lang-serv", href: "./services.html", content: "SERVICES"})
+
+
+
